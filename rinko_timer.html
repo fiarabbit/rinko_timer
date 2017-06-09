@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Rinko Timer</title>
+    <link rel="stylesheet" type="text/css" href="rinko_timer.css">
+</head>
+<body>
+<div>
+    <div class="explanation">
+        学府輪講用タイマー
+    </div>
+    <div class="formGroup">
+        <form id="presentation">
+            <span class="inForm total">
+                <input type="number" title="total">
+            </span>
+            <span class="inForm interim">
+                <input type="number" title="interim">
+            </span>
+            <input type="button"
+                   value="プレゼン開始">
+        </form>
+        <form id="questionAnswer">
+            <span class="inForm total">
+                <input type="number" title="total">
+            </span>
+            <span class="inForm interim">
+                <input type="number" title="interim">
+            </span>
+            <input type="button"
+                   value="質疑開始">
+        </form>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="timer.js"></script>
+
+</body>
+</html>
