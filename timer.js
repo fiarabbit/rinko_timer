@@ -76,8 +76,8 @@ function attachBellEvent($form){
 
     $form.submit(function(e){e.preventDefault();});
     $button.click(function(){
-       let totalInterval=$total.val();
-       let interimInterval=$interim.val();
+       let totalInterval=parseInt($total.val());
+       let interimInterval=parseInt($interim.val());
        if(interimInterval>totalInterval){
            alert('interim is set longer than total');
        }else{
