@@ -35,6 +35,12 @@ function getTimer(length, checkInterval, callable) {
             startTime = (new Date).getTime();
             endTime = startTime + len;
             this.loop();
+        },
+        getStartTime: function(){
+            return startTime;
+        },
+        getRemainingTime: function(){
+            return now - startTime
         }
     };
     return reference;
